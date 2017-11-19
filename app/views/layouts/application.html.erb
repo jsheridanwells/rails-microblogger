@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
   <head>
     <title><%= write_full_title(yield(:title)) %></title>
@@ -11,6 +11,11 @@
 
   <body>
     <%= render 'layouts/header' %>
+    <% flash.each do |message_type, message|%>
+      <div class="alert alert-<%= message_type %>">
+        <%= message %>
+      </div>
+    <% end %>
     <%= yield %>
     <%= debug(params) if Rails.env.development? %>
     <%= render 'layouts/footer' %>
