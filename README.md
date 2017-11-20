@@ -1,5 +1,7 @@
 # Ruby on Rails Tutorial sample application
 
+[View the deployed app](https://peaceful-fjord-37058.herokuapp.com/)
+
 This is the sample application for
 [*Ruby on Rails Tutorial:
 Learn Web Development with Rails*](http://www.railstutorial.org/)
